@@ -15,7 +15,7 @@ import ParsePromise from './ParsePromise';
 let AsyncStorage;
 try {
   // for React Native 0.43+
-  AsyncStorage = require('react-native/Libraries/react-native/react-native-implementation').AsyncStorage;
+  AsyncStorage = require('react-native/Libraries/Storage/AsyncStorage');
 } catch (error) {
   AsyncStorage = require('react-native/Libraries/react-native/react-native.js').AsyncStorage;
 }
